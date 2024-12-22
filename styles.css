@@ -122,7 +122,7 @@ a {
     .tile {
         width: 100%;  /* Make tiles stack vertically */
         margin: 10px 0;
-        background-color: rgb(37,37,37) /* Adjust background color for mobile */
+        background-color: rgb(37,37,37);/* Adjust background color for mobile */
         padding: 15px;
     }
 
