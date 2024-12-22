@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 44, 60);
+    color: rgb(240,240,240);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 98vw;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(240,240,240);
+}
+
+.share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+    color: rgb(0,0,0);
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+h2{
+    margin-bottom: 7vh;
+    font-size:small;
+}
+a {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
+
+.tile {
+    width: 100%;
+    background-color: rgb(37,37,37);
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tile:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+.tile-share-button {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(52,52,52);
+}
+
+.tile-share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+
+.image-container {
+    height: 250px;
+    width: 250px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 100%;
+}
+
+.icon {
+    margin: 4px 8px;
+    width: 44px;
+    height: 44px;
+}
+.real-estate-footer {
+    text-align: justify;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #d5caa5;
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 24px;
+}
+.real-estate-footer p:first-child {
+    font-size: 2.4rem; /* Adjust the size as desired */
+    font-weight: bold; /* Makes the text bold */
+    margin-bottom: 6vh; /* Adds space between the title and paragraph */
+    color:white;
+}
+
+@media (max-width: 400px) {
+
+
+
+    .tile {
+        width: 100%;  /* Make tiles stack vertically */
+        margin: 10px 0;
+        background-color: rgb(37,37,37) /* Adjust background color for mobile */
+        padding: 15px;
+    }
+
+    .tile p {
+        font-size: 1.1rem;  /* Increase font size for better readability */
+    }
+
+    .tile-share-button svg {
+        width: 20px;  /* Adjust icon size */
+        height: 20px;
+    }
+
+    header {
+        padding: 8px;
+    }
+}
+
